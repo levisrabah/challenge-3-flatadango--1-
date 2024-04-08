@@ -1,3 +1,4 @@
+// Your code here
 const filmList = document.getElementById('films');
 const imgHolder = document.querySelector("img");
 const movieTitle =document.getElementById("title");
@@ -8,7 +9,10 @@ const btn = document.getElementById("buy-ticket");
 const showTime = document.getElementById("showtime");
 const initialTickets = document.getElementById("ticket-num")
 
-// Eevent listener to add the DOM Content usinf 'Fetch Url'
+movieTitle.addEventListener('click', hello);
+function hello() {
+    console.log("hello")
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch(url)
@@ -39,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const movieObj = data.map(movie => {
             const container = document.createElement("div")
             const li = document.createElement("list");
-
             //Add a delete button next to the movie  name for deleting
             const deleteBtn = document.createElement("button");
             deleteBtn.innerHTML = "Delete";
@@ -87,8 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
      }
 
-     //Description of each and every movie
-
+     //Function for adding movie description
      function moviePoster(currentMovie) {
         showTime.innerHTML = `ShowTime: ${currentMovie.showtime}`
         movieTitle.innerHTML = currentMovie.title;
@@ -100,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //toggle button attribute disabled true text content remove att
         btn.setAttribute("disabled", "true");
 
-        //Button that updates the available number of tickets 
+        //Update ticket button based ob tickets availabilty
         if (currentMovie.tickets_sold >= currentMovie.capacity) {
             btn.textContent = "Sold Out";
             btn.setAttribute("disabled", "true");
@@ -110,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         btn.addEventListener("click", (e) => {
             e.preventDefault();
-
            // firstMovie.tickets_sold -=1;
             //console.log(initialTickets);
             buyTicket(currentMovie);
@@ -120,19 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
      function buyTicket(currentMovie) {
         if (currentMovie) {
-
             // Check if there are available tickets
-
             if (currentMovie.tickets_sold < currentMovie.capacity) {
-                // Update the total number of tickets sold
-
+                // Update the sold tickets count
                 currentMovie.tickets_sold++;
                 updateTickets(currentMovie);
             }
         }
     }
-    // Update of the number of tickets
-    
     function updateTickets(movie){
 
         if(movie) {
