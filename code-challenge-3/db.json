@@ -36,7 +36,7 @@
       "runtime": "101",
       "capacity": 40,
       "showtime": "09:00PM",
-      "tickets_sold": 31,
+      "tickets_sold": 32,
       "description": "A young man meets a farm girl who is actually a witch.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
     },
@@ -46,19 +46,9 @@
       "runtime": "96",
       "capacity": 50,
       "showtime": "03:30PM",
-      "tickets_sold": 45,
+      "tickets_sold": 48,
       "description": "The Martians kidnap Santa Claus because there is nobody on Mars to give their children presents.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/4232/p4232_v_v8_aa.jpg"
-    },
-    {
-      "id": "6",
-      "title": "Track Of The Moon Beast",
-      "runtime": "112",
-      "capacity": 30,
-      "showtime": "10:30PM",
-      "tickets_sold": 16,
-      "description": "A young man is transformed into a hideous 'moon beast' due to a meteor fragment lodged in his body.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/39804/p39804_v_v8_ab.jpg"
     },
     {
       "id": "7",
@@ -76,7 +66,7 @@
       "runtime": "115",
       "capacity": 40,
       "showtime": "08:30PM",
-      "tickets_sold": 32,
+      "tickets_sold": 33,
       "description": "On an isolated island, a small group of people are terrorized by giant voracious shrews in the midst of a hurricane.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/1466/p1466_v_v8_ab.jpg"
     },
@@ -86,7 +76,7 @@
       "runtime": "99",
       "capacity": 40,
       "showtime": "07:30PM",
-      "tickets_sold": 22,
+      "tickets_sold": 25,
       "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg"
     },
